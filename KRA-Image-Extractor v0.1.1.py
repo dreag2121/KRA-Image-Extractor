@@ -2,6 +2,7 @@ import os
 import zipfile
 from PIL import Image
 
+print("Process started, please wait....") 
 def extract_kra_thumbnails(folder_path):
     """
     Extracts mergedimage.png from .kra files and saves them as thumbnails.
@@ -36,3 +37,16 @@ script_directory = os.path.dirname(os.path.abspath(__file__))
 extract_kra_thumbnails(script_directory)
 
 print("Batch processing complete.")
+
+""" 
+To-do
+- Show the total number of thumbnails created, skipped or that had an error. 
+
+
+
+Change log
+v0.1    - Inital release (March 5, 2025)
+v0.1.1  - Added "Process started, please wait...." clarification text.
+        - Also added changelog and To-do
+
+"""
